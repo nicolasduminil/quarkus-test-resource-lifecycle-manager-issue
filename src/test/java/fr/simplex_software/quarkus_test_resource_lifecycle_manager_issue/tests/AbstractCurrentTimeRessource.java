@@ -7,7 +7,7 @@ import org.junit.jupiter.api.*;
 
 @QuarkusTest
 @QuarkusTestResource(value = MyTestRessource.class, restrictToAnnotatedClass = true)
-public class CurrentTimeRessourceIT
+public abstract class AbstractCurrentTimeRessource
 {
   @ConfigProperty(name = "quarkus.rest-client.baseUrl.url")
   String baseUrl;

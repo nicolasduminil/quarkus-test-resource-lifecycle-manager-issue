@@ -6,8 +6,7 @@ import org.eclipse.microprofile.config.inject.*;
 import org.junit.jupiter.api.*;
 
 @QuarkusTest
-@QuarkusTestResource(value = MyTestRessource.class, restrictToAnnotatedClass = true)
-public class CurrentTimeIT
+public class CurrentTimeIT extends AbstractCurrentTimeRessource
 {
   @ConfigProperty(name = "quarkus.rest-client.baseUrl.url")
   String baseUrl;
