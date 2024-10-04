@@ -1,9 +1,8 @@
-package fr.simplex_software.quarkus_test_resource_lifecycle_manager.issue;
+package fr.simplex_software.quarkus_test_resource_lifecycle_manager.issue.api;
 
 import jakarta.enterprise.context.*;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.*;
-import org.slf4j.*;
 
 import java.net.*;
 import java.nio.charset.*;

@@ -1,12 +1,13 @@
-package fr.simplex_software.quarkus_test_resource_lifecycle_manager_issue.tests;
+package fr.simplex_software.quarkus_test_resource_lifecycle_management.issue.common.tests;
 
-import fr.simplex_software.test_res.tests.*;
+import io.quarkus.test.common.*;
 import io.quarkus.test.junit.*;
 import org.eclipse.microprofile.config.inject.*;
 import org.junit.jupiter.api.*;
 
 @QuarkusTest
-public class CurrentTimeIT extends AbstractCurrentTimeRessource
+@QuarkusTestResource(value = MyTestRessource.class, restrictToAnnotatedClass = true)
+public abstract class AbstractCurrentTimeRessource
 {
   @ConfigProperty(name = "quarkus.rest-client.baseUrl.url")
   String baseUrl;
