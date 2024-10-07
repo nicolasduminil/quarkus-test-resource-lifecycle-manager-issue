@@ -3,7 +3,6 @@ package fr.simplex_software.quarkus_test_resource_lifecycle_manager.issue;
 import jakarta.enterprise.context.*;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.*;
-import org.slf4j.*;
 
 import java.net.*;
 import java.nio.charset.*;
