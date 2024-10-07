@@ -1,4 +1,4 @@
-package fr.simplex_software.quarkus_test_resource_lifecycle_management.issue.common.tests;
+package fr.simplex_software.quarkus_test_resource_lifecycle_manager.issue.common.tests;
 
 import io.quarkus.test.common.*;
 import jakarta.ws.rs.core.*;
