@@ -25,6 +25,7 @@ public class MyTestRessource implements QuarkusTestResourceLifecycleManager
   @Override
   public Map<String, String> start()
   {
+    System.out.println(">>>>>>>>>> start() " + quarkus.getLogs());
     quarkus.start();
     return Map.of("quarkus.rest-client.baseUrl.url", UriBuilder.fromUri("http://" + quarkus.getHost())
       .port(quarkus.getMappedPort(8080)).build().toString());

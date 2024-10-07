@@ -5,7 +5,7 @@ import io.quarkus.test.junit.*;
 import org.junit.jupiter.api.*;
 
 @QuarkusTest
-public class CurrentTimeIT extends AbstractCurrentTimeRessource
+public class CurrentTimeIT extends AbstractCurrentTimeResource
 {
   @BeforeAll
   public static void beforeAll()
